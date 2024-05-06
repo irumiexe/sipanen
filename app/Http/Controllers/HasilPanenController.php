@@ -84,6 +84,7 @@ class HasilPanenController extends Controller
         return view('auth.hasil-panen.create', [
             'title' => 'Tambah Hasil Panen',
             'kecamatan' => \App\Models\Kecamatan::all(),
+            // 'penyuluh' => \App\Models\Penyuluh::all(),
         ]);
     }
 

@@ -50,6 +50,8 @@
                                 <select name="roles" id="" class="custom-select shadow-sm mb-3">
                                     <option value="admin" {{ $user->roles == "admin" ? "selected" : '' }}>Admin</option>
                                     <option value="penyuluh" {{ $user->roles == "penyuluh" ? "selected" : '' }}>Penyuluh</option>
+                                    <option value="petani" {{ $user->roles == "petani" ? "selected" : '' }}>Petani</option>
+                                    <option value="kabid" {{ $user->roles == "kabid" ? "selected" : '' }}>Kabid</option>
                                 </select>
                             </div>
                             <div class="col-md">

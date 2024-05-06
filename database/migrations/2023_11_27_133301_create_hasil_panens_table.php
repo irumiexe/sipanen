@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('luas_lahan')->nullable();
             $table->string('kelompok_tani')->nullable();
             $table->string('alamat_ubinan')->nullable();
+            $table->string('tgl_tanam')->nullable();
+            $table->string('tgl_panen')->nullable();
             $table->string('gkp')->nullable();
             $table->string('gkg')->nullable();
             $table->string('hasil_produksi')->nullable();
@@ -25,6 +27,8 @@ return new class extends Migration
             $table->string('url_lokasi')->nullable();
             $table->foreignId('kecamatan_id')->nullable();
             $table->foreignId('kelurahan_id')->nullable();
+            $table->foreignId('penyuluh_id')->nullable();
+            $table->foreignId('kelompok_id')->nullable();
             $table->timestamps();
         });
 
